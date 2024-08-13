@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div onclick="taBort1()" id="banan">her går banan</div>
+    <div onclick="taBort2()" id="eple">her går epple</div>
+    <div class="minknapp">
+        <button onclick="addEple()"><img src="img/images.jpeg" alt=""></button>
+        <button id="banan" onclick="addBanan()"><img src="img/31yPIZ82n9L._UF1000,1000_QL80_.jpg" alt=""></button>
+    </div>
+
+    <script>
+        function addEple() {
+            document.getElementById('eple').innerHTML = /*HTML*/`
+            <img src="img/images.jpeg" alt=""></button>`;
+        }
+        function addBanan() {
+            document.getElementById('banan').innerHTML = /*HTML*/`
+            <img src="img/31yPIZ82n9L._UF1000,1000_QL80_.jpg" alt="">`;
+        }
+        function taBort1() {
+            document.getElementById('banan').innerHTML = '';
+        }
+        function taBort2() {
+            document.getElementById('eple').innerHTML = '';
+        }
+
+
+    </script>
+</body>
+
+</html>
